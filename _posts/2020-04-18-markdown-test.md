@@ -24,4 +24,4 @@ func main() error{
 ````
 
 
-![](my_pics/test.png)
+![test](https://Fordisk123.github.io/my-pics/test.jpeg)
