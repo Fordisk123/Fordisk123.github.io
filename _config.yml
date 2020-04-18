@@ -1,111 +1,67 @@
-#
-# 这个文档包含了本博客的设定信息，你可以编辑它来个性化自己的博客，
-#
+# Site settings
 
-# 你的博客名称，请用你想要的博客名替换“LOFFER”，以下修改都可类似处理
-# 注意，“name: LOFFER”，冒号后面的空格不可以省略。
-# 井号后面的文字是说明文档，不会被程序读取。
-name: LOFFER
-# 描述/签名
-description: 一个可以fork的博客
+author: fordisk
+email: example@email.com
+#twitter_username: twitter
+github_username:  Fordisk123
+#googleplus_username: google
 
-#
-# 下面的设定都是可选的
-#
+head-title: Fordisk's blog
+title: Fordisk's blog
 
-# 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/logo.png
+baseurl: "/blog"    # the subpath of your site, "/blog"
+url: ""
 
-# 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
+# footer 
+description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
 
-
-# 菜单中的按钮
-navigation:
-  - name: 首页
-    url: /
-  - name: 关于
-    url: /about
-  - name: 归档
-    url: /archive
-  - name: 标签
-    url: /tags
-
-# 每页的文章数
-paginate: 8
-
-# 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
-footer-links: 
-  weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
-  behance: # https://www.behance.net/<>
-  dribbble: # https://dribbble.com/<>
-  email: fromendworld@outlook.com 
-  facebook: #https://www.facebook.com/<>
-  flickr: #https://www.flickr.com/<>
-  github: FromEndWorld/loffer #https://github.com/<>
-  instagram: #https://instagram.com/<>
-  linkedin: #https://www.linkedin.com/in/<>
-  pinterest: #https://www.pinterest.com/<>
-  rss: #随便填点啥RSS就能用了
-  stackoverflow: # http://stackoverflow.com/<>
-  tumblr: # https://<username>.tumblr.com
-  twitter: # https://www.twitter.com/<your_twitter_username> 
-  youtube: # channel/<your_long_string> or user/<user-name>
-
-# 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
-
-# 输入Disqus shortname，即可添加评论区，细节可阅读文档。
-disqus: loffer #shortname
-
-# 输入Google Analytics web tracking code
-google_analytics:
-
-# 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
-url: 
-
-# 添加你的博客的二级域名，一般来说是你的repository名
-# 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
-# 那么就写成 "/repository-name"
-baseurl: /LOFFER
+favo: "春梦随云散，飞花逐水流"
+descrpt: "“巧者劳而智者忧，无能者无所求，饱食而遨游，泛若不系之舟”  ——《南华经》"
 
 
 #
-# !! 以下所有设置都不需要更改 !!
+# Build settings
 #
 
-permalink: /:title/
-paginate_path: /page:num/
+#exclude: [vendor]
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+markdown: kramdown
+highlighter: rouge
 
-# Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+  hard_wrap: false
+  highlight: true
+  auto_ids:  true
 
-# Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: compressed
 
-# Use the following plug-ins
-plugins:
-  - jekyll-paginate # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-paginate
+permalink: /posts/:categories/:title.html
 
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+paginate: 7
+#paginate_path: 'page/:num'
 
-excerpt_separator: ---
+gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
+
+
+#
+# Custom
+#
+
+# Color
+# All css class, see: http://materializecss.com/color.html
+header-color: "indigo lighten-1"
+head-theme-color: "#5c6bc0"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
+
+footer-color: "indigo lighten-1"
+footer-button-color: "indigo lighten-2"
+footer-link-color: "red-text text-accent-1"
+
+share-button-color: "pink"
+share-button-small-color: ""
+
+
+##
+#excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
+
