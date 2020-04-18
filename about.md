@@ -6,11 +6,11 @@ permalink: /about/
 
 #### Tagline
 
-Your tagline.
+
 
 #### Introduction
 
-Introduce yourself.
+
 
 #### This theme
 
@@ -19,7 +19,7 @@ This [jekyll](https://jekyllrb.com) theme is based on [materialize](http://mater
 
 #### License
 
-Copyright&nbsp;&copy;&nbsp;{{ site.author }}
+Copyright&nbsp;&copy;&nbsp;[mumuxme](https://github.com/mumuxme)
 
 - - -
 
