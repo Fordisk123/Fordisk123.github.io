@@ -9,7 +9,7 @@ github_username:  Fordisk123
 head-title: Fordisk's blog
 title: Fordisk's blog
 
-baseurl: ""    # the subpath of your site, "/blog"
+baseurl: "/"    # the subpath of your site, "/blog"
 url: "https://fordisk123.github.io/"
 
 # footer 
